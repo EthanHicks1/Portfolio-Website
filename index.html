@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<LINK rel="stylesheet" type="text/css" href="ethan_style2.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bowser/1.9.3/bowser.min.js"></script>
+
+<script>
+//Returns information on the site user
+$.getJSON('https://ipapi.co/json/', function(data) {
+  //console.log(JSON.stringify(data, null, 2));
+  //document.getElementById("test").innerHTML = JSON.stringify(data, null, 2);
+  var info = JSON.stringify(data, null, 2);
+  var info = "IP Address: " + data["ip"] + "<br>" +
+  "City: " + data["city"] + "<br>" + 
+  "State: " + data["region"] + "<br>" + 
+  "Zip: " + data["postal"] + "<br>" + 
+  "Organization or Internet Provider: " + data["org"] + "<br>" +
+  "Bowser: " + bowser.name + " v" + bowser.version + "<br>" +
+  "OS: " + bowser.osname + " v" + bowser.osversion;
+  
+  document.getElementById("test").innerHTML += info;
+});
+</script>
+
+
+</head>
+<body>
+
+<div class = "black">
+<ul class="header">
+  <li><a class="active" href="./index.html">Home</a></li>
+  <li><a href="./personal.html">Personal</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="./english.html">English</a><li>
+  <li><a href="#about">About</a></li>
+</ul>
+</div>
+
+<div class="container">
+
+<h1 class="center"> Ethan's Home page </h1>
+
+<img src=Ethan.jpg height = "400" width = "400" class="center">
+
+<h2> Welcome to my personal website. I am a currently a Senior in Computer Science at the University of Tennessee, Knoxville with an interest in the areas of Game Design, AI, Image Recognition, and Environmental Issues. This website will not contain anything fancy since I did all the coding but will gets the points across.</h2>
+
+<h2> Since you're already here I may as well and point out some things that I know about you: </h2>
+
+<p id="test"></p>
+
+<p style="color:red">Please note the information seen above about you is public information that I am not storing/using in any way. Just pointing it out for fun.</p>
+
+
+</div> <!--End of container div-->
+
+</body>
+</html>
