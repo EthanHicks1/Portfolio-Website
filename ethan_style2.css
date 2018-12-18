@@ -45,6 +45,7 @@ ul.header {
     background-color: #333;
 }
 
+/*
 li a{
     float: left;
     display: block;
@@ -53,16 +54,68 @@ li a{
     padding: 14px 16px;
     text-decoration: none;
 }
+*/
+
+/*li.header {
+    /*float: left;
+}*/
+
+a.header{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 
 li a:hover:not(.active) {
     background-color: #111;
 }
 
-.active {
+a.active {
     background-color: #CC0099;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .mydiv{background-color: #E0E0E0; font-size: 20px;}
 .mydiv h3{background-color: #E8E8E8; }
 .mydiv ul{}
 .mydiv ul li{}
+
+li.logo {
+  height: 54px;
+  padding-left: 44px;
+  padding-top: 3px;
+  padding-bottom: 44px;
+}
+
+.none{
+  background-color: #C0C0C0;
+}
+
+
+ul.no_bullet {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+li.leaf {
+background: url('/Gmail_logo.png') no-repeat left top;
+}
+
+a.test {
+    float: left;
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
