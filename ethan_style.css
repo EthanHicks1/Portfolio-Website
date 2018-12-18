@@ -1,0 +1,56 @@
+body {
+   background-color: #c0a4442;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+
+.container {
+    margin: 4px;
+    padding: 4px;
+    max-width: 1300px; /* override default container width */
+    background-color: #9CE1E8;
+}
+
+div{
+  background-color: #C0C0C0;
+}
+
+ul.header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #CC0099;
+}
+
+.mydiv{background-color: #E0E0E0;}
+.mydiv h3{background-color: #E8E8E8; }
+.mydiv ul{}
+.mydiv ul li{}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
