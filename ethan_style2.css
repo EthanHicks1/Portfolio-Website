@@ -5,6 +5,7 @@ body {
 
 p {
   font-size: 20px;
+  padding: 16px;
 }
 
 .container {
@@ -60,6 +61,11 @@ li a{
     /*float: left;
 }*/
 
+a.orange{
+  text-decoration: none;
+  color: orange;
+}
+
 a.header{
     float: left;
     display: block;
@@ -69,10 +75,15 @@ a.header{
     text-decoration: none;
 }
 
-
+/*
 li a:hover:not(.active) {
     background-color: #111;
+}*/
+
+a:hover:not(.active).header {
+    background-color: #111;
 }
+
 
 a.active {
     background-color: #CC0099;
